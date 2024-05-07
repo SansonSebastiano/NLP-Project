@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Text summarization with pretrained encoders}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Some definitions}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Summary}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Extractive summarization}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Abstractive summarization}{3}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}implementation}{3}{subsection.1.3}%
