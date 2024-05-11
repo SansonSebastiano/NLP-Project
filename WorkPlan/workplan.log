@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  11 MAY 2024 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  11 MAY 2024 16:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -389,9 +389,9 @@ Here is how much of TeX's memory you used:
  33499 multiletter control sequences out of 15000+600000
  567476 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,320b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,367b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on workplan.pdf (6 pages, 58848 bytes).
+Output written on workplan.pdf (6 pages, 58918 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
