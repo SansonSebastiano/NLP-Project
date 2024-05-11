@@ -77,33 +77,62 @@ most effective.
     \end{tabular}
 \end{center}
 \newpage
+
 \section{Deliverables}
-\begin{center}
-    \begin{tabular}{ |p{1.5cm}|p{3cm}|p{6cm}|p{3cm}|} 
-        \hline
-        Task & Deliverable & Description & Measurable objectives\\
-        \hline
-        1 & Report of the state-of-the-art & Each member of the group will be assigned a certain number of papers that they will have to read and summarize. At the end of this process, a final report condensing all the information will be produced, showcasing the state-of-the-art in the field. & We will report about at least 15 papers in our state of the art analysis (3 for each of us) \\
-        \hline
-        2 & Dataset & A dataset of chat messages will be collected & Collect a minimum number of chats, the number will not be small but will be chosen depending on the model that will be developed \\
-        \hline
-        3 & Preprocessed and analyzed dataset & The dataset will be preprocessed and analyzed to be used in the model. A notebook file will be produced &\\
-        \hline
-        4 & Model (text messages) & An implementation of the model that can summarize text messages will be produced &\\
-        \hline
-        5 & Model (images) & The model will be able to understand images and will summirize their content & \\
-        \hline
-        6 & Model (audio) & The model will be able to understand audio and will summirize their content &\\
-        \hline
-        7 & Evaluation report & The model will be tested and evaluated, and a report will be produced &\\
-        \hline
-        8 & Documentation & Will be produced all the documents which are useful to the comprehension of the project & \\
-        \hline
-    \end{tabular}
-\end{center}
-\section{Metrics}
-
-
-
+\begin{enumerate}
+    \item \textbf{Study of the state-of-the-art of the topic}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Report of the state-of-the-art;
+        \item \textbf{Description of the deliverable}: Each member of the group will be assigned a certain number of papers that 
+        they will have to read and summarize. At the end of this process, a final report condensing all the 
+        information will be produced, showcasing the state-of-the-art in the field;
+        \item \textbf{Measurable objectives}: We will report about at least 15 papers in our state of the art 
+        analysis (3 for each of us);
+    \end{itemize}
+    \item \textbf{Dataset collection}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Dataset;
+        \item \textbf{Description of the deliverable}: A dataset of chat messages will be collected or found;
+    \end{itemize}
+    \item \textbf{Data preprocessing}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Preprocessed and analyzed dataset;
+        \item \textbf{Description of the deliverable}: The dataset will be preprocessed and analyzed to be 
+        used in the model. A notebook file will be produced (.ipynb);
+    \end{itemize}
+    \item \textbf{Summarization of text messages}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Model (text messages);
+        \item \textbf{Description of the deliverable}: An implementation of the model that can summarize text 
+        messages will be produced;
+    \end{itemize}
+    \item \textbf{Summarization of images}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Model (images);
+        \item \textbf{Description of the deliverable}: An implementation of the model that can translate images in text and 
+        then summarize them with the text;
+    \end{itemize}
+    \item \textbf{Summarization of audio}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Model (audio);
+        \item \textbf{Description of the deliverable}: An implementation of the model that can write down the audio and  
+        then summarize them with the text;
+    \end{itemize}
+    \item \textbf{Test and evaluation of the model}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Evaluation report;
+        \item \textbf{Description of the deliverable}: The model will be tested and evaluated;
+        \item \textbf{Measurable objectives}: The model will be evaluated in different ways:
+        \begin{itemize}
+            \item Manual evaluation: We will check the readibility of the summaries, so if the produced summary does not contain gaps in its rhetorical structure or dangling anaphora;
+            \item Automatic evaluation: we will use some metrics to evaluate the model, for example ROUGE-1, ROUGE-2 and F-Measure. We will try to achieve a ROUGE $>$ 0.4, and F-Measure $>$ 0.5;
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Documentation}:
+    \begin{itemize}
+        \item \textbf{Deliverable}: Documentation;
+        \item \textbf{Description of the deliverable}: The necessary documentation will be produced to understand the project;
+    \end{itemize} 
+\end{enumerate}
 
 \end{document}

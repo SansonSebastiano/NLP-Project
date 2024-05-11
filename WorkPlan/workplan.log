@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  7 MAY 2024 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  11 MAY 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/User/Desktop/Universita/Magistrale/NLP_summary/progetto/workplan/workplan.tex
-(c:/Users/User/Desktop/Universita/Magistrale/NLP_summary/progetto/workplan/workplan.tex
+**c:/Users/User/Desktop/Universita/Magistrale/NLP_project/WorkPlan/workplan.tex
+(c:/Users/User/Desktop/Universita/Magistrale/NLP_project/WorkPlan/workplan.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -369,89 +369,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 []\OT1/cmr/m/n/12 Baggio,
  []
 
-[3] [4]
-Underfull \hbox (badness 3884) in paragraph at lines 84--85
-[]\OT1/cmr/m/n/12 Measurable ob-
- []
-
-
-Underfull \hbox (badness 6808) in paragraph at lines 86--86
-[]\OT1/cmr/m/n/12 Report of the
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 86--87
-[]\OT1/cmr/m/n/12 We will re-port
- []
-
-
-Underfull \hbox (badness 4378) in paragraph at lines 86--87
-\OT1/cmr/m/n/12 about at least
- []
-
-
-Underfull \hbox (badness 3460) in paragraph at lines 86--87
-\OT1/cmr/m/n/12 anal-y-sis (3 for
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 88--89
-[]\OT1/cmr/m/n/12 Collect a min-i-
- []
-
-
-Underfull \hbox (badness 4479) in paragraph at lines 88--89
-\OT1/cmr/m/n/12 cho-sen de-pend-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]\OT1/cmr/m/n/12 Preprocessed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-\OT1/cmr/m/n/12 and an-a-lyzed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-[]\OT1/cmr/m/n/12 Model (text
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
-[]\OT1/cmr/m/n/12 Evaluation re-
- []
-
-
-Overfull \hbox (42.11217pt too wide) in paragraph at lines 82--103
- [] 
- []
-
-[5]
-Overfull \vbox (0.4998pt too high) has occurred while \output is active []
-
- [6] [7] (workplan.aux)
+[3] [4] [5] [6] (workplan.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `workplan.out' has not changed.
-(rerunfilecheck)             Checksum: E142645F50114A15F23259039A073D41;360.
+(rerunfilecheck)             Checksum: 6D1324E25C33F86D26C6A7AFF0FD3A8F;282.
  ) 
 Here is how much of TeX's memory you used:
- 11355 strings out of 474494
- 171499 string characters out of 5753733
- 1937460 words of memory out of 5000000
- 33489 multiletter control sequences out of 15000+600000
- 566832 words of font info for 70 fonts, out of 8000000 for 9000
+ 11370 strings out of 474494
+ 171656 string characters out of 5753733
+ 1935460 words of memory out of 5000000
+ 33497 multiletter control sequences out of 15000+600000
+ 567169 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,499b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on workplan.pdf (7 pages, 46474 bytes).
+ 75i,8n,79p,320b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on workplan.pdf (6 pages, 57239 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
