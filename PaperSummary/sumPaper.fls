@@ -1,6 +1,6 @@
-PWD c:\Users\User\Desktop\Universita\Magistrale\NLP_summary\progetto
+PWD c:\Users\User\Desktop\Universita\Magistrale\NLP_project\PaperSummary
 INPUT C:\Users\User\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\User\Desktop\Universita\Magistrale\NLP_summary\progetto\sumPaper.tex
+INPUT c:\Users\User\Desktop\Universita\Magistrale\NLP_project\PaperSummary\sumPaper.tex
 OUTPUT sumPaper.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls

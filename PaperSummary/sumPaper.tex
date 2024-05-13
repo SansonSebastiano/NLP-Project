@@ -30,6 +30,8 @@
 \section{Text summarization with pretrained encoders}
 \subsection{Some definitions}
 \begin{itemize}
+    \item \textbf{Good summary}: A good summary must be fluent and consistent, capture all the important topics, but not contain repetitions 
+    of the same information;
     \item \textbf{Abstractive modeling}: the task requires language generation capabilities in order to create 
     summaries containing novel words and phrases not featured in the source text;
     \item \textbf{Extractive summarization}: is often defined as a binary classification task with labels 
@@ -73,5 +75,27 @@ The encoder can be trained with more accurate gradients when the decoder is beco
     \item Summarization quality using Rouge (1, 2, L)
     \item human evaluation.
 \end{itemize}
+\section{Automatic Text Summarization: a State-of-the-art Review}
+\subsection{Extractive methods}
+The main task is to determine which sentences are important and should 
+be included in the summary. 
+\begin{itemize}
+    \item Cheng: data-driven approach for single-document summarization based on continuous a 
+    hierchical document encoder and an attention-based extractor. The model can be trained on large-scale
+    datasets and learn informativeness features based on continuous representations without 
+    access to linguistic annotations. The labels are assigned to each sentence in the 
+    document individually based on their semantic correspondence with the gold summary;
+    \item Nallapati: recurrent neural network based sequence model for extractive single-document
+    summarization (SummaRuNNer). Identify the set of sentences which collectively collectively give the 
+    highest ROUGE with respect to the gold summary
+    \item Narayan: similar approach but for sentence ranking there is a combination of maximum-likelihood cross-entropy
+    with rewards from policy gradient reinforcement learning to direclty optimize the final evaluation
+    metric (ROUGE), a sentence gets a high rank for summary selection if it often occurs in high
+    scoring summaries.
+    \item Yasunaga: GCN takes sentence embedding from RNN as input node feature and through 
+    multiple layers-wise propagation generates high-level hidden features for sentences. Sentence salience is then estimated
+    through a regression on top and the important sentences are extracted in a greedy 
+    manner while avoiding redundancy.
 
+\end{itemize}
 \end{document}
