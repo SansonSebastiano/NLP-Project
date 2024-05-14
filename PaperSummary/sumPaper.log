@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  13 MAY 2024 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  14 MAY 2024 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -334,7 +334,7 @@ Overfull \hbox (20.33578pt too wide) in paragraph at lines 30--30
 []\OT1/cmr/bx/n/17.28 Text sum-ma-riza-tion with pre-trained en-coders 
  []
 
-<./img/bert.png, id=52, 606.01407pt x 194.97844pt>
+<./img/bert.png, id=57, 606.01407pt x 194.97844pt>
 File: ./img/bert.png Graphic file (type png)
 <use ./img/bert.png>
 Package pdftex.def Info: ./img/bert.png  used on input line 49.
@@ -349,26 +349,26 @@ Overfull \hbox (7.75505pt too wide) in paragraph at lines 64--66
 []$\OML/cmm/m/it/12 lr[] \OT1/cmr/m/n/12 = [][] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 min\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 step[]; step \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 warmup[]\OT1/cmr/m/n/12 )$, where $[][] = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1$, $\OML/cmm/m/it/12 warmup[] \OT1/cmr/m/n/12 =
  []
 
-[3] [4] (sumPaper.aux)
+[3] [4] [5] (sumPaper.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `sumPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 7E9F77377490D1EF647F1CDDBCA3DC9D;1497.
+(rerunfilecheck)             Checksum: 1A3227D28DE6266BEBFFB5BB6479527F;1652.
  ) 
 Here is how much of TeX's memory you used:
- 11373 strings out of 474494
- 171853 string characters out of 5753733
+ 11376 strings out of 474494
+ 171889 string characters out of 5753733
  1932460 words of memory out of 5000000
- 33505 multiletter control sequences out of 15000+600000
+ 33506 multiletter control sequences out of 15000+600000
  567169 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,445b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,445b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sumPaper.pdf (4 pages, 162452 bytes).
+Output written on sumPaper.pdf (5 pages, 164436 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -96,6 +96,16 @@ be included in the summary.
     multiple layers-wise propagation generates high-level hidden features for sentences. Sentence salience is then estimated
     through a regression on top and the important sentences are extracted in a greedy 
     manner while avoiding redundancy.
-
 \end{itemize}
+\subsection{Abstractive methods}
+Here we talk about sequence-to-sequence models (first introduces as enocder-decoder).
+\begin{itemize}
+    \item Rush 2015: neural attention based model that generates each word of the summary
+    conditioned on the input sentence. Easy scalable for training on large amounts of data;
+    \item Chopra 2016: extension of the previous model with RNN, the encoder encodes the position of the
+    input words and uses convolutional network to encode input words;
+    \item  Nallapati 2016, Switching generator/pointer: decoder is equipped with a switch that decides
+    between generating a word based on the context or using a word from the input.
+\end{itemize}
+  
 \end{document}
