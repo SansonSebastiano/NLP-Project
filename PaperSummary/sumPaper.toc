@@ -7,3 +7,7 @@
 \contentsline {section}{\numberline {2}Automatic Text Summarization: a State-of-the-art Review}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Extractive methods}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Abstractive methods}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}A Comprehensive Survey on Process-Oriented Automatic text summarization with exploraiton of LLM-based methods}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Summarization model}{5}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Extractive summarization}{5}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Abstractive summarization}{5}{subsubsection.3.1.2}%
