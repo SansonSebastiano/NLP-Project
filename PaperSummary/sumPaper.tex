@@ -94,8 +94,7 @@ be included in the summary.
     scoring summaries.
     \item Yasunaga: GCN takes sentence embedding from RNN as input node feature and through 
     multiple layers-wise propagation generates high-level hidden features for sentences. Sentence salience is then estimated
-    through a regression on top and the important sentences are extracted in a greedy 
-    manner while avoiding redundancy.
+    through a regression on top and the important sentences are extracted in a greedy manner while avoiding redundancy.
 \end{itemize}
 \subsection{Abstractive methods}
 Here we talk about sequence-to-sequence models (first introduces as enocder-decoder).
@@ -172,4 +171,18 @@ Then a human evaluation is performed to assess the quality of the summaries gene
 \subsubsection{Implementation}
 \label{subsubsec:SummIt_implementation}
 
+\section{A Comprehensive Survey on Process-Oriented Automatic text summarization with exploraiton of LLM-based methods}
+Dialogue summarization: Zero-shot approach: employ discourse relations to structure the conversation and leverage an existing document summarization model to craft the final summary. 
+\subsection{Summarization model}
+\subsubsection{Extractive summarization}
+\begin{itemize}
+    \item Words-counting model: define importance as most frequent or most likely to occur. TextRank: phrase graph representation, adjacency matrix;
+    \item Similarity-based model: assign high rank based on similarity;
+    \item Classifiers: cut and represent the senteces, categorize the sentences using a classifier select the sentences whose category is summary. SqueezeBERTSum.
+\end{itemize}
+\subsubsection{Abstractive summarization}
+\begin{itemize}
+    \item RNN-based models: RNN, LSTM and GRU - convert the input sequence into a sequence of letters, words or sentences using seq2seq. SummaRuNNer;
+    \item Transformer-based models: BART, GPT.
+\end{itemize}
 \end{document}

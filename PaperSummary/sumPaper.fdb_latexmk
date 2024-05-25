@@ -1,12 +1,12 @@
 # Fdb version 4
-["makeindex sumPaper.idx"] 1714914565 "sumPaper.idx" "sumPaper.ind" "sumPaper" 1716480456 0
-  "sumPaper.idx" 1716480455 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex sumPaper.idx"] 1716652244 "sumPaper.idx" "sumPaper.ind" "sumPaper" 1716652276 0
+  "sumPaper.idx" 1716652276 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "sumPaper.ilg"
   "sumPaper.ind"
   (rewritten before read)
-["pdflatex"] 1716480455 "/Users/sebastianosanson/Documents/NLP_project/NLP_project/PaperSummary/sumPaper.tex" "sumPaper.pdf" "sumPaper" 1716480456 0
-  "/Users/sebastianosanson/Documents/NLP_project/NLP_project/PaperSummary/sumPaper.tex" 1716480455 10511 1070e26496b0224df45327c707be9f2e ""
+["pdflatex"] 1716652276 "/Users/sebastianosanson/Documents/NLP_project/NLP_project/PaperSummary/sumPaper.tex" "sumPaper.pdf" "sumPaper" 1716652276 0
+  "/Users/sebastianosanson/Documents/NLP_project/NLP_project/PaperSummary/sumPaper.tex" 1716652274 11567 91e4b4df2140266a0aca8a2c0b38beba ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -113,12 +113,12 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696677407 7883455 b1b4510041b1d19361d6075efc495481 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "img/bert.png" 1715949796 63340 0fc31f5513cef96fb1e1971cf14dc3b9 ""
-  "img/summit_architecture.png" 1716475955 581211 17c50c7c6bd2950a62449cf7aaccce18 ""
-  "sumPaper.aux" 1716480456 4317 4169a92919de4bb6bcd873fcad3b17c4 "pdflatex"
-  "sumPaper.ind" 1715949796 0 d41d8cd98f00b204e9800998ecf8427e "makeindex sumPaper.idx"
-  "sumPaper.out" 1716480456 3067 6fb4d76d52a3ec29a3dd095bb4c70d08 "pdflatex"
-  "sumPaper.tex" 1716480455 10511 1070e26496b0224df45327c707be9f2e ""
-  "sumPaper.toc" 1716480456 1568 e622316ebfd3de7f09b34e777297c758 "pdflatex"
+  "img/summit_architecture.png" 1716651644 581211 17c50c7c6bd2950a62449cf7aaccce18 ""
+  "sumPaper.aux" 1716652276 4932 fe26bcb29b04a327a5739100e0679f83 "pdflatex"
+  "sumPaper.ind" 1716652244 0 d41d8cd98f00b204e9800998ecf8427e "makeindex sumPaper.idx"
+  "sumPaper.out" 1716652276 4235 861e7809f6d1a489b42d6372cf44dc01 "pdflatex"
+  "sumPaper.tex" 1716652274 11567 91e4b4df2140266a0aca8a2c0b38beba ""
+  "sumPaper.toc" 1716652276 2019 76af47cdff9c2d3b59788a07cb010196 "pdflatex"
   (generated)
   "sumPaper.aux"
   "sumPaper.idx"
