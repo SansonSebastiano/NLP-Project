@@ -7,3 +7,11 @@
 \contentsline {section}{\numberline {2}Automatic Text Summarization: a State-of-the-art Review}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Extractive methods}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Abstractive methods}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}SummIt: Iterative Text Summarization via ChatGPT}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{5}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Architecture}{5}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}In-context Learning}{6}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Summary faithfulness and controllability}{7}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Evaluation}{7}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Qualitative Analysis}{7}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Implementation}{7}{subsubsection.3.1.6}%
