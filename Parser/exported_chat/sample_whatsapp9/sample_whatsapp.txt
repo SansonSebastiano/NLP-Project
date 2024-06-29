@@ -1,0 +1,15 @@
+30/06/2024, 9:00 AM - Emily: Hey everyone, we need to schedule our next workgroup meeting. When are you all available?
+30/06/2024, 9:02 AM - Ryan: Hi Emily, I'm available Tuesday and Thursday afternoons.
+30/06/2024, 9:03 AM - Lisa: Tuesday works for me. How about you, Mark?
+30/06/2024, 9:04 AM - Mark: Tuesday afternoon is fine. What time are we thinking?
+30/06/2024, 9:05 AM - Emily: How does 2 PM sound for everyone?
+30/06/2024, 9:06 AM - Ryan: 2 PM works for me.
+30/06/2024, 9:07 AM - Lisa: Same here. 2 PM on Tuesday it is.
+30/06/2024, 9:08 AM - Mark: Perfect. Do we have an agenda for the meeting?
+30/06/2024, 9:09 AM - Emily: Yes, we need to discuss the project timeline, allocate tasks, and review the latest client feedback.
+30/06/2024, 9:10 AM - Ryan: Sounds good. Should we prepare anything in advance?
+30/06/2024, 9:11 AM - Emily: Yes, please review the client feedback document I sent last week and think about any tasks you can take on.
+30/06/2024, 9:12 AM - Lisa: Got it. I'll review the document and come prepared with my thoughts.
+30/06/2024, 9:13 AM - Mark: I'll do the same. Looking forward to it.
+30/06/2024, 9:14 AM - Ryan: Me too. See you all on Tuesday at 2 PM.
+30/06/2024, 9:15 AM - Emily: Great! See you then.
