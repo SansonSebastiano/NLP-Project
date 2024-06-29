@@ -1,6 +1,6 @@
 12/06/2024, 9:00 AM - Alice: Hey everyone, have you thought about our summer vacation yet?
 
-12/06/2024, 9:02 AM - Bob: Yes! I was thinking about going to the beach. Here's a picture of the place I found. (image)
+12/06/2024, 9:02 AM - Bob: Yes! I was thinking about going to the beach. Here's a picture of the place I found. IMG_01.jpg
 
 12/06/2024, 9:05 AM - Charlie: Wow, that looks amazing, Bob! I'm totally in. 😍
 
@@ -8,7 +8,7 @@
 
 12/06/2024, 9:12 AM - Alice: I did some research. It's about $500 each for a week, including accommodation.
 
-12/06/2024, 9:15 AM - Bob: That's not bad. Here's an audio clip of the waves from the beach.
+12/06/2024, 9:15 AM - Bob: That's not bad.
 
 12/06/2024, 9:18 AM - Charlie: That sounds perfect! I can already imagine us there. 😌🏖️
 
@@ -24,7 +24,7 @@
 
 12/06/2024, 9:35 AM - Alice: I agree. I'll book the car as well. Any preferences for activities?
 
-12/06/2024, 9:40 AM - Bob: I'd love to try snorkeling. Check out this spot I found. (image)
+12/06/2024, 9:40 AM - Bob: I'd love to try snorkeling. Check out this spot I found. IMG_02.webp
 
 12/06/2024, 9:42 AM - Charlie: Snorkeling sounds fun. How about a hike too? There's a trail nearby with great views.
 
