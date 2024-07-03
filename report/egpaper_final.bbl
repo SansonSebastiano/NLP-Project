@@ -14,4 +14,15 @@ Bogdan Gliwa, Iwona Mochol, Maciej Biesek, and Aleksander Wawer.
   summarization.
 \newblock {\em CoRR}, abs/1911.12237, 2019.
 
+\bibitem{radford2022robustspeechrecognitionlargescale}
+Alec Radford, Jong~Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and
+  Ilya Sutskever.
+\newblock Robust speech recognition via large-scale weak supervision, 2022.
+
+\bibitem{xiao2023florence2advancingunifiedrepresentation}
+Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael
+  Zeng, Ce Liu, and Lu Yuan.
+\newblock Florence-2: Advancing a unified representation for a variety of
+  vision tasks, 2023.
+
 \end{thebibliography}

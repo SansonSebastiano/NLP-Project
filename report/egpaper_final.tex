@@ -6,7 +6,20 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
 
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green},
+    showstringspaces=false,
+    frame=single,
+    breaklines=true
+}
 % Include other packages here, before hyperref.
 
 % If you comment hyperref and then uncomment it, you should delete
@@ -79,7 +92,7 @@ In this section, we explore datasets essential for training and evaluating autom
 
 \subsection{SAMSum}
 
-The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,000 messenger-like conversations with summaries splitted in:
+The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237}~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,000 messenger-like conversations with summaries splitted in:
 \begin{itemize}
     \item training: 14,732;
     \item validation: 818;
@@ -117,8 +130,37 @@ The splits of the new dataset are as follows:
 \end{itemize}
 
 To obtain it we had to preprocess the Dialogsum dataset and... TO DO
-% dialogsum tolta una colonna topic
 
+% dialogsum tolta una colonna topic
+\subsection{Validation Dataset}
+
+To rigorously assess the performance of the selected models within our specific use case, 
+we constructed a validation dataset by generating new examples derived from authentic WhatsApp conversations.
+
+\subsubsection{Data Collection}
+WhatsApp provides a robust functionality for exporting chat conversations in a .txt file format. 
+This exported file encompasses all exchanged messages, complete with timestamps and sender names. 
+Additionally, the file includes various media types, such as images, voice messages, and videos. 
+This comprehensive dataset is instrumental for rigorous evaluation as it reflects real-world conditions and the diverse communication forms encountered in practical applications.
+
+\subsubsection{Data Preprocessing}
+The exported .txt file underwent a meticulous preprocessing phase to extract the pertinent information, including message content and sender details. 
+This information was structured into a Python dictionary as follows:
+
+\begin{lstlisting}
+    dialogues = [
+        {
+            'text': "Hello, how are you?",
+            'id': 0,
+            'golden_summary': "A greeting"
+        }
+    ]
+\end{lstlisting}
+For conversations containing images or voice messages, the filenames of these media were embedded within the text field to facilitate subsequent processing. 
+As a final step, the filenames were replaced with detailed descriptions for images and transcriptions for voice messages. 
+The models utilized for generating these descriptions and transcriptions are discussed in the following sections.
+
+This preprocessing approach ensures that the dataset is both comprehensive and structured, enabling effective analysis and model evaluation.
 \section{Models Involved}
 
 \subsection{BART}
@@ -127,12 +169,19 @@ TO DO
 
 \subsection{Florence-2 Large}
 
-To ensure that the images were also processed by the summarization model we had to find a way for converting them into a detailed description of their content. For this specific task we used Florence-2 [TO DO: CITE https://arxiv.org/abs/2311.06242] by Microsoft, which is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks. It was designed to take text-prompt as task instructions and generate desirable results in text forms, whether it be captioning, object detection, grounding or segmentation. This model leverages on the FLD-5B dataset, containing 5.4 billion annotations across 126 million images, to master multi-task learning. The model's sequence-to-sequence architecture enables it to excel in both zero-shot and fine-tuned settings, proving to be a competitive vision foundation model.
-
+To ensure that the images were processed by the summarization model, it was necessary to convert them into detailed textual descriptions. 
+For this task, we employed Florence-2~\cite{xiao2023florence2advancingunifiedrepresentation} by Microsoft, an advanced vision foundation model that utilizes a prompt-based approach to address a wide array of vision and vision-language tasks. 
+Florence-2 is designed to interpret text prompts as task instructions and produce the desired textual outputs, including captioning, object detection, grounding, and segmentation. 
+This model is built upon the extensive FLD-5B dataset, which comprises 5.4 billion annotations across 126 million images, thereby enhancing its multi-task learning capabilities. 
+The sequence-to-sequence architecture of Florence-2 allows it to perform effectively in both zero-shot and fine-tuned scenarios, establishing itself as a robust and competitive vision foundation model.
 
 \subsection{Whisper}
 
-As for the images, we had also to convert the voice messages to text only. To do this task we used Whisper by OpenAI [TO DO: CITE https://cdn.openai.com/papers/whisper.pdf], an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. The use of such a large and diverse dataset lead to improved robustness to accents, background noise and technical language, which is really helpful in our use case scenario since most of the times the voice messages are not in top notch quality. Moreover, it enables transcription in multiple languages, as well as translation from those languages into English.
+In addition to processing images, it was necessary to convert voice messages to text. 
+For this task, we utilized Whisper by OpenAI~\cite{radford2022robustspeechrecognitionlargescale}, an automatic speech recognition (ASR) system. 
+Whisper is trained on 680,000 hours of multilingual and multitask supervised data collected from the web. 
+The extensive and diverse dataset enhances the system's robustness to accents, background noise, and technical language, which is particularly beneficial for our use case, as voice messages are often of suboptimal quality. 
+Furthermore, Whisper supports transcription in multiple languages and translation from those languages into English.
 
 \section{Fine Tuning}
 
