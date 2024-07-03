@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{chen-etal-2021-dialogsum}
+Yulong Chen, Yang Liu, Liang Chen, and Yue Zhang.
+\newblock {D}ialog{S}um: {A} real-life scenario dialogue summarization dataset.
+\newblock In Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli, editors,
+  {\em Findings of the Association for Computational Linguistics: ACL-IJCNLP
+  2021}, pages 5062--5074, Online, Aug. 2021. Association for Computational
+  Linguistics.
+
+\bibitem{DBLP:journals/corr/abs-1911-12237}
+Bogdan Gliwa, Iwona Mochol, Maciej Biesek, and Aleksander Wawer.
+\newblock Samsum corpus: {A} human-annotated dialogue dataset for abstractive
+  summarization.
+\newblock {\em CoRR}, abs/1911.12237, 2019.
+
+\end{thebibliography}
