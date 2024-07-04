@@ -34,7 +34,7 @@
 
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 %\ifcvprfinal\pagestyle{empty}\fi
-\setcounter{page}{4321}
+\setcounter{page}{1}
 \begin{document}
 
 %%%%%%%%% TITLE
@@ -92,7 +92,7 @@ In this section, we explore datasets essential for training and evaluating autom
 
 \subsection{SAMSum}
 
-The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237}~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,000 messenger-like conversations with summaries splitted in:
+The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,000 messenger-like conversations with summaries splitted in:
 \begin{itemize}
     \item training: 14,732;
     \item validation: 818;
@@ -166,6 +166,11 @@ This preprocessing approach ensures that the dataset is both comprehensive and s
 \subsection{BART}
 
 TO DO
+
+\subsection{Multimedia models}
+
+Because chat messages often include multimedia contents, we have decided to use specific models to convert this type of data into text that can be summarized by the previously cited model. In particular, we transform images and voice messages, which are very frequently used nowadays. 
+Since our project regards text chat summarization, we will not delve into the technical details of how the following models work in this paper. This approach ensures that our main objective is clearly addressed without overcomplicating the discussion with the intricate workings of the underlying models.
 
 \subsection{Florence-2 Large}
 
