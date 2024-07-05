@@ -98,38 +98,11 @@ The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,00
     \item validation: 818;
     \item test: 819.
 \end{itemize}
-Conversations were created and written down by linguists fluent in English. 
-Linguists were asked to create conversations similar to those they write on a daily basis, reflecting the proportion of topics of their real-life messenger convesations. 
+Conversations were created and written down by linguists fluent in English: they were asked to create them similar to those they write on a daily basis, reflecting the proportion of topics of their real-life messenger conversations. 
 The style and register are diversified - conversations could be informal, semi-formal or formal, 
 they may contain slang words, emoticons and typos. Then, the conversations were annotated with summaries. 
 It was assumed that summaries should be a concise brief of what people talked about in the conversation in third person. 
 The SAMSum dataset was prepared by Samsung R\&D Institute Poland and is distributed for research purposes.
-
-\subsection{Dialogsum}
-
-DialogSum~\cite{chen-etal-2021-dialogsum} is an extensive dialogue summarization dataset comprising 13,460 dialogues splitted in: 
-\begin{itemize}
-    \item training: 12,460;
-    \item validation: 500;
-    \item test: 1,500.
-\end{itemize}
-supplemented by an additional 100 holdout dialogues designated for topic generation, which contain the id, dialogue, and topic fields. 
-Each dialogue is paired with manually annotated summaries and topics. The dataset is exclusively in English and includes four data fields: the text of the dialogue, a human-written summary of the dialogue, a human-written topic or one-liner of the dialogue, and a unique identifier for each example. 
-
-DialogSum distinguishes itself from previous datasets by incorporating dialogues under rich real-life scenarios, including a wider array of task-oriented contexts. 
-The dialogues exhibit clear communication patterns and intents, making them suitable for summarization.
-
-\subsection{Custom Dataset}
-
-In order to obtain a dataset with an increased volume of data, a broader spectrum of conversation scenarios and an enhanced evaluation, we decided to concatenate the previously mentioned datasets into a bigger one. \\
-The splits of the new dataset are as follows:
-\begin{itemize}
-    \item training: 27,192;
-    \item validation: 1,318;
-    \item test: 2,319.
-\end{itemize}
-
-To obtain it we had to preprocess the Dialogsum dataset and... TO DO
 
 % dialogsum tolta una colonna topic
 \subsection{Validation Dataset}
@@ -166,7 +139,7 @@ This preprocessing approach ensures that the dataset is both comprehensive and s
 
 \subsection{BART}
 
-TO DO
+TO DO (?)
 
 \subsection{FLAN-T5}
 
