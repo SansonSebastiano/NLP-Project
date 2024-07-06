@@ -195,13 +195,8 @@ Whisper is trained on 680,000 hours of multilingual and multitask supervised dat
 The extensive and diverse dataset enhances the system's robustness to accents, background noise, and technical language, which is particularly beneficial for our use case, as voice messages are often of suboptimal quality. 
 Furthermore, Whisper supports transcription in multiple languages and translation from those languages into English.
 
-\section{Fine Tuning}
-
-\section{Testing}
-
-\section{Results}
-
-\subsection{Metrics}
+\section{Metrics}
+\subsection{ROUGE}
 We evaluated the results provided by different NLP models using the ROUGE set of metrics, which stands for Recall-Oriented Understudy for Gisting Evaluation. We chose this specific metric because it is currently the most effective way to assess the performance of automatic summarization systems. It compares the generated summary with one or more human made references by measuring the overlap of n-grams in them. \\ \\ 
 In particular, we have used the following metrics:
 \begin{itemize}
@@ -239,19 +234,66 @@ The final results were obtained by the successive formulas:
         K = \frac{P_o - P_e}{1 - P_e}
     \end{equation}
 \end{itemize}
+
+\section{Fine Tuning}
+Before the fine-tuning the two models we have chosen, gave to us the following results of the ROUGE metrics:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Model & R-1 & R-2 & R-L & R-LSum \\ 
+        \hline
+        BART & 0.0 & 0.0 & 0.0 & 0.0\\
+        FLAN-T5 & 0.0 & 0.0 & 0.0 & 0.0\\
+        \hline
+    \end{tabular}
+    \caption{ROUGE metrics before fine-tuning}
+    \label{table:ROUGEbeforeft}
+\end{table}
+
+After the complete fine-tune of the models on the SAMSum dataset, we obtained the following results:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Model & R-1 & R-2 & R-L & R-LSum \\ 
+        \hline
+        BART & 0.0 & 0.0 & 0.0 & 0.0\\
+        FLAN-T5 & 0.0 & 0.0 & 0.0 & 0.0\\
+        \hline
+    \end{tabular}
+    \caption{ROUGE metrics after fine-tuning}
+    \label{table:ROUGEafterft}
+\end{table}
+
+As we can see .... \\
+Paramter selection (?)
+
+\section{Testing}
+Putting the preprocessing and the fine-tuned (nome modello) together, we tested the functioning in the practice on the custom dataset we created. The results are shown in the following table:
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|}
-    \hline
-    Po & Pe & K \\ 
-    \hline
-    1 & 1 & 1 \\
-    \hline
-\end{tabular}
+        \hline
+        Po & Pe & K \\ 
+        \hline
+        1 & 1 & 1 \\
+        \hline
+    \end{tabular}
 \caption{Results of the human evaluation}
 \label{table:example}
 \end{table}
 
+Here there is an example of the output of the model on a chat of the custom dataset:
+\begin{lstlisting}
+    {
+        'text': "Hello, how are you?",
+        'id': 0,
+        'golden_summary': "A greeting",
+        'summary': "A greeting"
+    }
+\end{lstlisting}
+\section{Conclusions}
 
 
 %\subsection{Suggested Structure}
