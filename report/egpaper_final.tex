@@ -139,7 +139,13 @@ This preprocessing approach ensures that the dataset is both comprehensive and s
 
 \subsection{BART}
 
-TO DO (?)
+BART~\cite{lewis2019bart} is a denoising autoencoder that maps a corrupted document to the original document it was derived from. It is implemented as a sequence-to-sequence model with a bidirectional encoder over 
+corrupted text and a left-to-right autoregressive decoder. \\
+In the architecture there are 6 layers both in the encoder and decoder (while the large model uses 12 layers in each). Each layer of the decoder performs cross-attention over the final hidden layer of the 
+encoder. This pretraining enables BART to effectively learn robust representations of text.\\
+BART is trained by corrupting documents and then optimizing a reconstruction loss between the decoder's output and the original document. \\
+The part which interesd us is the fine-tuning one, this model can be used in several ways for downstream applications like: sequence classification, token classification, sequence generation
+and machine translation tasks.
 
 \subsection{FLAN-T5}
 
