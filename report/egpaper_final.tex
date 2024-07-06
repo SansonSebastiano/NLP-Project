@@ -221,6 +221,39 @@ Each metric is calculated as follows:
 \end{itemize}
 The value returned for each ROUGE metric is the F1-Score, since it provides a balanced measure of a model's performance by combining both precision and recall. By doing so, it avoids scenarios where a model might have high precision but low recall values, or vice versa. This is especially important when both false positives and false negatives carry significant costs.
 
+\subsection{Human evaluation}
+We evaluated the results of the model on the WhatsApp chats in this way: given the 12 chats we had, each member of the group voted if the summary was good or not.
+The final results were obtained by the successive formulas:
+\begin{itemize}
+    \item Proportion of annotations for which all the members agree:
+    \begin{equation}
+        P_o = \frac{\sum_i \text{count}(A=B=C=D=E=y_i)}{\text{total annotations}}
+    \end{equation}
+    where A, B, C, D, E represent the members of the group, and $y_i$ the label (can be 0 or 1);
+    \item Agreement expected by chance:
+    \begin{equation}
+        P_e = \sum_i P(A=y_i) \ldots P(E=y_i)
+    \end{equation}
+    \item Cohen's Kappa:
+    \begin{equation}
+        K = \frac{P_o - P_e}{1 - P_e}
+    \end{equation}
+\end{itemize}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Po & Pe & K \\ 
+    \hline
+    1 & 1 & 1 \\
+    \hline
+\end{tabular}
+\caption{Results of the human evaluation}
+\label{table:example}
+\end{table}
+
+
+
 %\subsection{Suggested Structure}
 
 %The following is a suggested structure for your report:

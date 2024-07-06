@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex egpaper_final"] 1720269206 "egpaper_final.aux" "egpaper_final.bbl" "egpaper_final" 1720269284 0
+["bibtex egpaper_final"] 1720273690 "egpaper_final.aux" "egpaper_final.bbl" "egpaper_final" 1720273693 0
   "./egbib.bib" 1720258840 3949 1f9dd440a629c5c2a3d61ea4bd38a5ca ""
   "./ieee_fullname.bst" 1720012549 21040 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "egpaper_final.aux" 1720269283 2729 9e9849dd34143d1d0ce0f54b1410f865 "pdflatex"
+  "egpaper_final.aux" 1720273692 3083 d85343c95cc856e5880047c8245ab95b "pdflatex"
   (generated)
   "egpaper_final.bbl"
   "egpaper_final.blg"
   (rewritten before read)
-["pdflatex"] 1720269282 "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" "egpaper_final.pdf" "egpaper_final" 1720269284 0
+["pdflatex"] 1720273691 "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" "egpaper_final.pdf" "egpaper_final" 1720273693 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136765053 960 379cc0019370a9e0208a0a3f949f847a ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136765053 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -38,6 +38,9 @@
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb" 1136846148 45758 19968a0990191524e34e1994d4a31cb6 ""
@@ -116,12 +119,12 @@
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1704129212 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1704129614 24214252 cc690f832350213b62e49e8eecd65268 ""
-  "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" 1720269281 17759 a27a641361dbe674cf87ea7034df6442 ""
+  "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" 1720273687 19555 73d3dc2594bda71b4b5ee1d33fcfe7d5 ""
   "cvpr.sty" 1720012549 8434 9c85e63bb1830fdefeac27370f229c9e ""
   "cvpr_eso.sty" 1720012549 3987 6aa7c08ff2621006e0603349e40a30a8 ""
-  "egpaper_final.aux" 1720269283 2729 9e9849dd34143d1d0ce0f54b1410f865 "pdflatex"
-  "egpaper_final.bbl" 1720269207 1736 d26ffbc380451e3de447c58ea76492c0 "bibtex egpaper_final"
-  "egpaper_final.tex" 1720269281 17759 a27a641361dbe674cf87ea7034df6442 ""
+  "egpaper_final.aux" 1720273692 3083 d85343c95cc856e5880047c8245ab95b "pdflatex"
+  "egpaper_final.bbl" 1720273690 1736 d26ffbc380451e3de447c58ea76492c0 "bibtex egpaper_final"
+  "egpaper_final.tex" 1720273687 19555 73d3dc2594bda71b4b5ee1d33fcfe7d5 ""
   "eso-pic.sty" 1720012549 9727 d2935ae95b5cd343fcf5887ff530288d ""
   (generated)
   "egpaper_final.aux"
