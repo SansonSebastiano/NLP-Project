@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{chung2022scalinginstructionfinetunedlanguagemodels}
+Hyung~Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus,
+  Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson,
+  Shixiang~Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen, Aakanksha
+  Chowdhery, Alex Castro-Ros, Marie Pellat, Kevin Robinson, Dasha Valter,
+  Sharan Narang, Gaurav Mishra, Adams Yu, Vincent Zhao, Yanping Huang, Andrew
+  Dai, Hongkun Yu, Slav Petrov, Ed~H. Chi, Jeff Dean, Jacob Devlin, Adam
+  Roberts, Denny Zhou, Quoc~V. Le, and Jason Wei.
+\newblock Scaling instruction-finetuned language models, 2022.
+
+\bibitem{DBLP:journals/corr/abs-1911-12237}
+Bogdan Gliwa, Iwona Mochol, Maciej Biesek, and Aleksander Wawer.
+\newblock Samsum corpus: {A} human-annotated dialogue dataset for abstractive
+  summarization.
+\newblock {\em CoRR}, abs/1911.12237, 2019.
+
+\bibitem{radford2022robustspeechrecognitionlargescale}
+Alec Radford, Jong~Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and
+  Ilya Sutskever.
+\newblock Robust speech recognition via large-scale weak supervision, 2022.
+
+\bibitem{xiao2023florence2advancingunifiedrepresentation}
+Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael
+  Zeng, Ce Liu, and Lu Yuan.
+\newblock Florence-2: Advancing a unified representation for a variety of
+  vision tasks, 2023.
+
+\bibitem{lewis2019bart}
+Mike Lewis Yinhan Liu Naman Goyal Marjan Ghazvininejad Abdelrahman Mohamed Omer
+  Levy Ves Stoyanov~Luke Zettlemoyer.
+\newblock Bart: Denoising sequence-to-sequence pre-training for natural
+  language generation, translation, and comprehension, 2019.
+
+\end{thebibliography}
