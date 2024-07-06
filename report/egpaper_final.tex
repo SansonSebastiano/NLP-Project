@@ -144,7 +144,7 @@ corrupted text and a left-to-right autoregressive decoder. \\
 In the architecture there are 6 layers both in the encoder and decoder (while the large model uses 12 layers in each). Each layer of the decoder performs cross-attention over the final hidden layer of the 
 encoder. This pretraining enables BART to effectively learn robust representations of text.\\
 BART is trained by corrupting documents and then optimizing a reconstruction loss between the decoder's output and the original document. \\
-The part which interesd us is the fine-tuning one, this model can be used in several ways for downstream applications like: sequence classification, token classification, sequence generation
+The part that interest us is the fine-tuning one, this model can be used in several ways for downstream applications like: sequence classification, token classification, sequence generation
 and machine translation tasks. 
 
 \subsection{FLAN-T5}
@@ -179,7 +179,7 @@ The comparison between T5 and FLAN-T5, both in the base version, highlights how 
 Because chat messages often include multimedia contents, we have decided to use specific models to convert this type of data into text that can be summarized by the previously cited model. In particular, we transform images and voice messages, which are very frequently used nowadays. 
 Since our project regards text chat summarization, we will not focus into the technical details of how the following models work in this paper. This approach ensures that our main objective is clearly addressed without overcomplicating the discussion with the intricate workings of the underlying models.
 
-\subsection{Florence-2 Large}
+\subsubsection{Florence-2 Large}
 
 To ensure that the images were processed by the summarization model, it was necessary to convert them into detailed textual descriptions. 
 For this task, we employed Florence-2 by Microsoft~\cite{xiao2023florence2advancingunifiedrepresentation}, an advanced vision foundation model that utilizes a prompt-based approach to address a wide array of vision and vision-language tasks. 
@@ -187,7 +187,7 @@ Florence-2 is designed to interpret text prompts as task instructions and produc
 This model is built upon the extensive FLD-5B dataset, which comprises 5.4 billion annotations across 126 million images, thereby enhancing its multi-task learning capabilities. 
 The sequence-to-sequence architecture of Florence-2 allows it to perform effectively in both zero-shot and fine-tuned scenarios, establishing itself as a robust and competitive vision foundation model.
 
-\subsection{Whisper}
+\subsubsection{Whisper}
 
 In addition to processing images, it was necessary to convert voice messages to text. 
 For this task, we utilized Whisper by OpenAI~\cite{radford2022robustspeechrecognitionlargescale}, an automatic speech recognition (ASR) system. 
@@ -200,6 +200,24 @@ Furthermore, Whisper supports transcription in multiple languages and translatio
 \section{Testing}
 
 \section{Results}
+
+\subsection{Metric}
+We evaluated the results provided by different NLP models using the ROUGE set of metrics, which stands for Recall-Oriented Understudy for Gisting Evaluation. We chose this specific metric because it is currently the most effective way to assess the performance of automatic summarization systems. It compares the generated summary with one or more human made references by measuring the overlap of n-grams in them. \\ \\ 
+In particular, we have used the following metrics:
+\begin{itemize}
+    \item \textbf{ROUGE-1}: as the number suggests, it evaluates the overlap of unigrams, meaning that it compares the single words between the summaries;
+    \item \textbf{ROUGE-2}: this time it evaluates the overlap of bigrams, that are two consecutive words;
+    \item \textbf{ROUGE-L}: this one instead evaluates the longest common subsequence, meaning that it considers the structure of the sentences and the word order, but not requiring the words to be consecutive.
+\end{itemize}
+Each metric is calculated as follows:
+\begin{itemize}
+    \item \textbf{Precision}: it measures the accuracy of the positive predictions made by the model. It is the ratio of correctly predicted positive instances to the total predicted positive instances \\
+    \[ \text{Precision} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Positives (FP)}} \]
+    \item \textbf{Recall}: it measures the ability of the model to find all relevant positive instances in the dataset. It is the ratio of correctly predicted positive instances to the total actual positive instances. \\
+    \[ \text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} \]
+    \item \textbf{F1-Score}: is the harmonic mean of precision and recall. It provides a single metric that balances both precision and recall, which is useful when the dataset has an uneven class distribution or when the cost of false positives and false negatives is different. \\
+    \[ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \]
+\end{itemize}
 
 
 %\subsection{Suggested Structure}
