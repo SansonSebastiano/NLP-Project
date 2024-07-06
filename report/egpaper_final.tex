@@ -216,20 +216,32 @@ Each metric is calculated as follows:
 \end{itemize}
 The value returned for each ROUGE metric is the F1-Score, since it provides a balanced measure of a model's performance by combining both precision and recall. By doing so, it avoids scenarios where a model might have high precision but low recall values, or vice versa. This is especially important when both false positives and false negatives carry significant costs.
 
-\subsection{Human evaluation}
+\subsection{Human evaluation - Fleiss' Kappa}
 We evaluated the results of the model on the WhatsApp chats in this way: given the 12 chats we had, each member of the group voted if the summary was good or not.
-The final results were obtained by the successive formulas:
+The final results were obtained by using the Fleiss' Kappa metric, which is a statistical measure for assessing the reliability of agreement between a fixed number of raters 
+when assigning categorical ratings to a number of items or classifying items. 
+It is defined as follows:
 \begin{itemize}
     \item Proportion of annotations for which all the members agree:
     \begin{equation}
-        P_o = \frac{\sum_i \text{count}(A=B=C=D=E=y_i)}{\text{total annotations}}
+        P_o = \frac{1}{n} \sum_{i=1}^n \frac{1}{N(N-1)}(\sum_{j=1}^N n_{ij}(n_{ij} - 1))
     \end{equation}
-    where A, B, C, D, E represent the members of the group, and $y_i$ the label (can be 0 or 1);
+    where:
+    \begin{itemize}
+        \item N is the number of raters;
+        \item n is the number of items;
+        \item k is the number of categories;
+        \item $n_{ij}$ is the number of raters who assigned the i-th item to the j-th category.
+    \end{itemize}
     \item Agreement expected by chance:
     \begin{equation}
-        P_e = \sum_i P(A=y_i) \ldots P(E=y_i)
+        P_e = \sum_{j=1}^k p_j^2
     \end{equation}
-    \item Cohen's Kappa:
+    \item Proportion of all assignments which were to the j-th category:
+    \begin{equation}
+        p_j = \frac{1}{nN} \sum_{i=1}^n n_{ij}
+    \end{equation}
+    \item Fleiss' Kappa:
     \begin{equation}
         K = \frac{P_o - P_e}{1 - P_e}
     \end{equation}
