@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  7 JUL 2024 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  7 JUL 2024 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -358,68 +358,68 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 66
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 4531) in paragraph at lines 95--96
+Underfull \hbox (badness 4531) in paragraph at lines 91--92
 []\OT1/ptm/m/n/10 The SAM-Sum [[]] dataset con-tains about 16,000
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 97.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 93.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 2142) in paragraph at lines 152--154
+Underfull \hbox (badness 2142) in paragraph at lines 145--147
 \OT1/ptm/m/n/10 The T5 model fol-lows the Trans-former ar-chi-tec-ture's
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 158--160
+Underfull \hbox (badness 2080) in paragraph at lines 151--153
 \OT1/ptm/m/n/10 The com-par-i-son be-tween T5 and FLAN-T5, both in
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 171--172
+Underfull \hbox (badness 2846) in paragraph at lines 164--165
 \OT1/ptm/m/n/10 ing): it eval-u-ates the per-for-mance of question-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 [3]
-Underfull \hbox (badness 1817) in paragraph at lines 210--211
+Underfull \hbox (badness 1817) in paragraph at lines 203--204
 \OT1/ptm/m/n/10 cor-rectly pre-dicted pos-i-tive in-stances to the to-tal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Overfull \hbox (5.07698pt too wide) detected at line 211
+Overfull \hbox (5.07698pt too wide) detected at line 204
 [] \OT1/cmr/m/n/10 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 []\OT1/ptm/m/n/10 FLAN-T5: []$\OT1/pcr/m/n/10 https : / / huggingface . co /
  []
 
@@ -461,9 +461,9 @@ Here is how much of TeX's memory you used:
  34339 multiletter control sequences out of 15000+600000
  582800 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,921b,2004s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,909b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (5 pages, 150301 bytes).
+Output written on egpaper_final.pdf (5 pages, 150336 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
