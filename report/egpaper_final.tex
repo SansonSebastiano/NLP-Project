@@ -221,7 +221,7 @@ Each member of the team gave a vote: 1 if the summary was good and 0 otherwise a
 was represented by the sum of the votes of each member. 
 
 \section{Motivations}
-After we've read papaer on the state-of-the-art about the summarization topic we decided to work in 
+After we've read papers on the state-of-the-art about the summarization topic we decided to work in 
 the following way:
 \begin{itemize}
     \item We chose abstractive summarization insted of extractive summarization because the first one 
@@ -291,8 +291,23 @@ one represents our votes on the quality of the summary:
         \hline
     \end{tabular}
 \caption{Results of the human evaluation}
-\label{table:FleissKappa}
-\end{table} \\
+\label{table:humanEval}
+\end{table} 
+We also calculated the ROUGE scores on all the example of the custom dataset and we obtained 
+the results shown in the table \ref{table:ROUGEcustom} by averaging all the values.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \rowcolor{lightergray}
+        R-1 & R-2 & R-L \\ 
+        \hline
+        0.41 & 0.18 & 0.39  \\
+        \hline
+    \end{tabular}
+\caption{ROUGE metrics on the custom dataset}
+\label{table:ROUGEcustom}
+\end{table} 
 Here is an example of the model’s output on a chat from our custom dataset:
 \begin{lstlisting}
     {
@@ -303,33 +318,70 @@ Here is an example of the model’s output on a chat from our custom dataset:
     }
 \end{lstlisting}
 \section{Conclusions}
-We've reached all the tasks we set out to do in the work plan, including the non-mandatory ones.
+In conclusion we can say that we were able to make a model which can do pretty good chat summaries.
+The main problems we encountred were the lack of resources that if we had we could have used bigger models and 
+the fact that the model was biased on doing really small summaries, 
+so it sums up too much for the really long chat. 
+Another problem was the fact that the summaries depended on the convertion of the images and the model used for 
+that task didin't always give the right description. \\
+We've reached all the tasks we set out to do in the work plan, including the non-mandatory ones as shown
+in the table \ref{table:Deliverables}. We also respected the time schedule we set out to do in the work plan and in the 
+table \ref{table:TimeSchedule} we can see the effective time we spent on each task.
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|c|c|c|}
+    \begin{tabular}{|c|c|c|c|}
         \hline
         \rowcolor{lightergray}
-        Task & Mandatory & Status\\ 
+        N & Task & Mand & Status\\ 
         \hline
-        \makecell{Study of the \\ state-of-the-art } & Yes & Completed \\
+        1 & \makecell{Study of the \\ state-of-the-art } & Yes & Completed \\
         \hline
-        Dataset colletion & Yes & Completed \\
+        2 & Dataset colletion & Yes & Completed \\
         \hline
-        Data preprocessing & Yes & Completed \\
+        3 & Data preprocessing & Yes & Completed \\
         \hline
-        \makecell{Summarization of \\ text messages} & Yes & Completed \\
+        4 & \makecell{Summarization of \\ text messages} & Yes & Completed \\
         \hline
-        \makecell{Summarization \\ of images} & No & Completed \\
+        5 & \makecell{Summarization \\ of images} & No & Completed \\
         \hline
-        \makecell{Summarization of \\ voice messages} & No & Completed \\
+        6 & \makecell{Summarization of \\ voice messages} & No & Completed \\
         \hline
-        \makecell{Test and evaluation \\ of the model} & Yes & \makecell{Completed \\ ROUGE: 0.416 > 0.4 \\ F-Score: ???} \\
+        7 & \makecell{Test and evaluation \\ of the model} & Yes & \makecell{Completed \\ ROUGE: 0.416 > 0.4 \\ F-Score: ???} \\
         \hline
-        Documentation & Yes & Completed \\
+        8 & Documentation & Yes & Completed \\
         \hline
     \end{tabular}
     \caption{Deliverables status}
     \label{table:Deliverables}
+\end{table}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \rowcolor{lightergray}
+        Task & Aul & Bag & Ber & Bri & San & Tot\\ 
+        \hline
+        1 & 5 & 5 & 5 & 5 & 5 & 25 \\
+        \hline
+        2 & 5 & 3 & 3 & 2 & 2 & 15 \\
+        \hline
+        3 & 3 & 4 & 3 & 0 & 0 & 10 \\
+        \hline
+        4 & 17 & 16 & 16 & 21 & 22 & 91 \\
+        \hline
+        5 & 2 & 5 & 5 & 2 & 1 & 15 \\
+        \hline
+        6 & 3 & 3 & 5 & 2 & 2 & 15 \\
+        \hline
+        7 & 10 & 10 & 10 & 15 & 15 & 60 \\
+        \hline
+        8 & 5 & 5 & 5 & 5 & 5 & 25 \\
+        \hline
+        Tot & 50 & 51 & 52 & 52 & 52 & 257 \\
+        \hline
+    \end{tabular}
+    \caption{Time schedule}
+    \label{table:TimeSchedule}
 \end{table}
 
 

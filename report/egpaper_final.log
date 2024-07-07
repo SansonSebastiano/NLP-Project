@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  7 JUL 2024 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  7 JUL 2024 21:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,9 +485,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
-Overfull \hbox (6.42255pt too wide) in paragraph at lines 309--331
+Overfull \hbox (5.49272pt too wide) in paragraph at lines 332--354
  [][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (egpaper_final.bbl
 Underfull \hbox (badness 2213) in paragraph at lines 4--12
@@ -516,17 +522,17 @@ L3 programming layer <2023-12-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14099 strings out of 474494
- 213295 string characters out of 5753733
- 1977460 words of memory out of 5000000
- 36136 multiletter control sequences out of 15000+600000
+ 14103 strings out of 474494
+ 213362 string characters out of 5753733
+ 1992460 words of memory out of 5000000
+ 36138 multiletter control sequences out of 15000+600000
  595799 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,18n,79p,909b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (5 pages, 114498 bytes).
+Output written on egpaper_final.pdf (5 pages, 117405 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
