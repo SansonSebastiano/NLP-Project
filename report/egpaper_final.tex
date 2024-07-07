@@ -8,7 +8,14 @@
 \usepackage{amssymb}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
 
+\definecolor{lightergray}{rgb}{0.9,0.9,0.9}
+\renewcommand{\arraystretch}{1.15}
+\captionsetup[table]{skip=5pt}
 
 \lstset{
     language=Python,
@@ -79,8 +86,35 @@ Sebastiano Sanson\\
 In the era of digital communication, chat platforms have become fundamentals in our daily interactions, whether they are personal or professional. This new type of transmission favors real-time messages exchange which allows users to engage in conversations that can quickly accumulate extensive chat logs. The large volume of messages, especially in active group chats formed by dozens or even hundreds of users, often makes it difficult for users to stay updated without dedicating significant time to review each message. This issue highlights the need for an efficient method to quickly extract essential information from chat conversations. \\
 We aim to address this need by developing an automated system for summarizing chat messages, with the goal to generate concise summaries and reducing the need to sort through all messages. By doing so, users can quickly obtain the main points of discussions, significantly saving time and reducing cognitive load. The utility of this application is evident in various contexts. For instance, in corporate environments, project teams often heavily rely on group chats to coordinate tasks, share updates and exchange miscellaneous informations. Similarly, social groups frequently engage in dynamic conversations, discussing a wide range of topics, planning events, and sharing personal updates. In both scenarios, an automated summarization system can enhance productivity and ensure important information is not overlooked. \\
 This research aims to explore and implement state of the art NLP techniques to create an effective summarization system, focusing on the datasets used, the manipulation of them in order to obtain always a coherent data structure, how we obtained new examples to test the performances and the results we got after all.
-
-TO DO: overview of our main results!
+Regarding the results, we fulfilled successfully all the task criteria outlined in the work plan, including also the non mandatory ones. \\ \\
+As stated in the work plan, the deliverables are:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor{lightergray}
+        Task & Mandatory & Status\\ 
+        \hline
+        \makecell{Study of the \\ state-of-the-art } & Yes & Completed \\
+        \hline
+        Dataset colletion & Yes & Completed \\
+        \hline
+        Data preprocessing & Yes & Completed \\
+        \hline
+        \makecell{Summarization of \\ text messages} & Yes & Completed \\
+        \hline
+        \makecell{Summarization \\ of images} & No & Completed \\
+        \hline
+        \makecell{Summarization of \\ voice messages} & No & Completed \\
+        \hline
+        \makecell{Test and evaluation \\ of the model} & Yes & \makecell{Completed \\ ROUGE: 0.416 > 0.4 \\ F-Score: ???} \\
+        \hline
+        Documentation & Yes & Completed \\
+        \hline
+    \end{tabular}
+    \caption{Deliverables status}
+    \label{table:Deliverables}
+\end{table}
 
 \section{Datasets}
 
@@ -245,6 +279,7 @@ Before the fine-tuning the two models we have chosen, gave to us the following r
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline
+        \rowcolor{lightergray}
         Model & R-1 & R-2 & R-L & R-LSum \\ 
         \hline
         BART & 0.0 & 0.0 & 0.0 & 0.0\\
@@ -260,6 +295,7 @@ After the complete fine-tune of the models on the SAMSum dataset, we obtained th
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline
+        \rowcolor{lightergray}
         Model & R-1 & R-2 & R-L & R-LSum \\ 
         \hline
         BART & 0.0 & 0.0 & 0.0 & 0.0\\
@@ -284,6 +320,7 @@ Putting the preprocessing and the fine-tuned (nome modello) together, we tested 
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
+        \rowcolor{lightergray}
         Po & Pe & K \\ 
         \hline
         1 & 1 & 1 \\
