@@ -256,7 +256,7 @@ Before the fine-tuning the two models we have chosen, gave to us the following r
         Model & R-1 & R-2 & R-L & R-LSum \\ 
         \hline
         BART & 0.0 & 0.0 & 0.0 & 0.0\\
-        FLAN-T5 & 0.0 & 0.0 & 0.0 & 0.0\\
+        FLAN-T5 & 0.45 & 0.21 & 0.37 & 0.37\\
         \hline
     \end{tabular}
     \caption{ROUGE metrics before fine-tuning}
@@ -271,7 +271,7 @@ After the complete fine-tune of the models on the SAMSum dataset, we obtained th
         Model & R-1 & R-2 & R-L & R-LSum \\ 
         \hline
         BART & 0.0 & 0.0 & 0.0 & 0.0\\
-        FLAN-T5 & 0.0 & 0.0 & 0.0 & 0.0\\
+        FLAN-T5 & 0.47 & 0.23 & 0.37 & 0.37 \\
         \hline
     \end{tabular}
     \caption{ROUGE metrics after fine-tuning}
@@ -279,7 +279,12 @@ After the complete fine-tune of the models on the SAMSum dataset, we obtained th
 \end{table}
 
 As we can see .... \\
-Paramter selection (?)
+For the re-use of the models once they have been fine-tuned, we uploaded them to the Hugging Face repository:
+\begin{itemize}
+    \item BART: \url{https://huggingface.co/Seba213/summarizer-bart-cnn}
+    \item FLAN-T5: \url{https://huggingface.co/Seba213/flan-t5-base-samsum}
+\end{itemize}
+
 
 \section{Testing}
 Putting the preprocessing and the fine-tuned (nome modello) together, we tested the functioning in the practice on the custom dataset we created. The results are shown in the following table:
