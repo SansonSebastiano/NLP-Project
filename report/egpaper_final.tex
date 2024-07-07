@@ -76,19 +76,15 @@ Sebastiano Sanson\\
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
-In the era of digital communication, chat platforms have become fundamentals in our daily interactions, whether they are personal or professional. This new type of transmission favors real-time messages exchange which allows users to engage in conversations that can quickly accumulate extensive chat logs. The huge volume of messages, especially in active group chats formed by dozens if not hundreds of users, often makes it difficult for users to stay updated without dedicating substantial time to review each message. This challenge highlights the need for an efficient method that enables users to quickly extract essential information from chat conversations.
-
-This research project addresses this need by developing an automated system for summarizing chat messages with the goal to generate concise summaries, reducing the need to sort through all messages. By doing so, users can quickly obtain the main points of discussions, significantly saving time and reducing cognitive load.
-
-The significance of this application is evident in various contexts: for instance, in corporate environments, project teams often heavily rely on group chats to coordinate tasks, share updates and exchange miscellaneous informations; similarly, social groups frequently engage in dynamic conversations. In both scenarios, an automated summarization system can enhance productivity and ensure important information is not overlooked.
-
+In the era of digital communication, chat platforms have become fundamentals in our daily interactions, whether they are personal or professional. This new type of transmission favors real-time messages exchange which allows users to engage in conversations that can quickly accumulate extensive chat logs. The large volume of messages, especially in active group chats formed by dozens or even hundreds of users, often makes it difficult for users to stay updated without dedicating significant time to review each message. This issue highlights the need for an efficient method to quickly extract essential information from chat conversations. \\
+We aim to address this need by developing an automated system for summarizing chat messages, with the goal to generate concise summaries and reducing the need to sort through all messages. By doing so, users can quickly obtain the main points of discussions, significantly saving time and reducing cognitive load. The utility of this application is evident in various contexts. For instance, in corporate environments, project teams often heavily rely on group chats to coordinate tasks, share updates and exchange miscellaneous informations. Similarly, social groups frequently engage in dynamic conversations, discussing a wide range of topics, planning events, and sharing personal updates. In both scenarios, an automated summarization system can enhance productivity and ensure important information is not overlooked. \\
 This research aims to explore and implement state of the art NLP techniques to create an effective summarization system, focusing on the datasets used, the manipulation of them in order to obtain always a coherent data structure, how we obtained new examples to test the performances and the results we got after all.
 
 TO DO: overview of our main results!
 
 \section{Datasets}
 
-In this section, we explore datasets essential for training and evaluating automated summarization systems for chat messages: an ideal dataset should have a variety of conversation styles and contexts to ensure the robustness and versatility of the summarization models. The datasets should contain real-life or realistic dialogues annotated with concise and accurate summaries. Additionally, the data should reflect diverse communication patterns, including informal and formal registers, and incorporate common conversational elements such as slang, emojis, eventual typos, the use of voice messages and images. We present below two notable datasets, SAMSum and DialogSum (both obtained by Hugging Face repository), which fulfill these criteria and provide rich resources for advancing the field of conversational AI.
+In this section, we explore datasets that are essential for training and evaluating automated summarization systems for chat messages> An ideal dataset should have a variety of conversation styles and contexts to ensure the robustness and versatility of the summarization models. The datasets should contain real-life or realistic dialogues annotated with concise and accurate summaries. Additionally, the data should reflect diverse communication patterns, including informal and formal registers, and incorporate common conversational elements such as slang, emojis, eventual typos, voice messages and images. We present below SAMSum (obtained by the Hugging Face repository), a great dataset which fulfill these criteria and provide rich resources for advancing the field of conversational AI.
 
 \subsection{SAMSum}
 
@@ -99,26 +95,25 @@ The SAMSum~\cite{DBLP:journals/corr/abs-1911-12237} dataset contains about 16,00
     \item test: 819.
 \end{itemize}
 Conversations were created and written down by linguists fluent in English: they were asked to create them similar to those they write on a daily basis, reflecting the proportion of topics of their real-life messenger conversations. 
-The style and register are diversified - conversations could be informal, semi-formal or formal, 
+The style and register are diversified: conversations could be informal, semi-formal or formal, 
 they may contain slang words, emoticons and typos. Then, the conversations were annotated with summaries. 
 It was assumed that summaries should be a concise brief of what people talked about in the conversation in third person. 
 The SAMSum dataset was prepared by Samsung R\&D Institute Poland and is distributed for research purposes.
 
 % dialogsum tolta una colonna topic
-\subsection{Validation Dataset}
+\subsection{Testing Dataset}
 
-To rigorously assess the performance of the selected models within our specific use case, 
-we constructed a testing dataset by generating new examples derived from authentic WhatsApp conversations.
+To assess the performance of the selected models within our specific use case, we constructed a testing dataset by generating new examples derived from authentic conversations exported by WhatsApp.
 
 \subsubsection{Data Collection}
-WhatsApp provides a robust functionality for exporting chat conversations in a .txt file format. 
-This exported file encompasses all exchanged messages, complete with timestamps and sender names. 
+
+\hspace{1em}WhatsApp provides a robust functionality for exporting chat conversations in a \texttt{.txt} file format, which encompasses all exchanged messages with timestamps and sender names. 
 Additionally, the file includes various media types, such as images, voice messages, and videos. 
 This comprehensive dataset is instrumental for rigorous evaluation as it reflects real-world conditions and the diverse communication forms encountered in practical applications.
 
 \subsubsection{Data Preprocessing}
 
-The exported .txt file underwent a meticulous preprocessing phase to extract the pertinent information, including message content and sender details. 
+\hspace{1em}The exported \texttt{.txt} file underwent a meticulous preprocessing phase to extract the pertinent information, including message content and sender details. 
 This information was structured into a Python dictionary as follows:
 
 \begin{lstlisting}
@@ -132,8 +127,7 @@ This information was structured into a Python dictionary as follows:
 \end{lstlisting}
 For conversations containing images or voice messages, the filenames of these media were embedded within the text field to facilitate subsequent processing by replacing the filenames with detailed descriptions for images and transcriptions for voice messages. 
 The models utilized for generating these descriptions and transcriptions are discussed in the following sections.
-We also scraped out irrelevant information, like the date-time, in order to match the same structure used in the training dataset mentioned in the previous sections 
-
+We also scraped out irrelevant information, like the date-time, in order to match the same structure used in the training dataset mentioned in the previous sections. \\
 This preprocessing approach ensures that the dataset is both comprehensive and structured, enabling effective analysis and model evaluation.
 \section{Models Involved}
 
@@ -141,11 +135,10 @@ This preprocessing approach ensures that the dataset is both comprehensive and s
 
 BART~\cite{lewis2019bart} is a denoising autoencoder that maps a corrupted document to the original document it was derived from. It is implemented as a sequence-to-sequence model with a bidirectional encoder over 
 corrupted text and a left-to-right autoregressive decoder. \\
-In the architecture there are 6 layers both in the encoder and decoder (while the large model uses 12 layers in each). Each layer of the decoder performs cross-attention over the final hidden layer of the 
+In the architecture there are 6 layers, both in the encoder and decoder (while the large model uses 12 layers in each). Each layer of the decoder performs cross-attention over the final hidden layer of the 
 encoder. This pretraining enables BART to effectively learn robust representations of text.\\
 BART is trained by corrupting documents and then optimizing a reconstruction loss between the decoder's output and the original document. \\
-The part that interests us is the fine-tuning one, this model can be used in several ways for downstream applications like: sequence classification, token classification, sequence generation
-and machine translation tasks. 
+The part that interests us is the fine-tuning: this model can be used in several ways for downstream applications like sequence classification, token classification, sequence generation and machine translation tasks. 
 
 \subsection{FLAN-T5}
 
@@ -176,12 +169,12 @@ The comparison between T5 and FLAN-T5, both in the base version, highlights how 
 
 \subsection{Multimedia models}
 
-Because chat messages often include multimedia contents, we have decided to use specific models to convert this type of data into text that can be summarized by the previously cited model. In particular, we transform images and voice messages, which are very frequently used nowadays. 
+Because chat messages often include multimedia contents, we have decided to use specific models to convert this type of data into text that can be summarized by the previously cited model. In particular, we transform images and voice messages - which are very frequently used nowadays - while avoiding GIFs and videos due to their high computational demands. 
 Since our project regards text chat summarization, we will not focus into the technical details of how the following models work in this paper. This approach ensures that our main objective is clearly addressed without overcomplicating the discussion with the intricate workings of the underlying models.
 
 \subsubsection{Florence-2 Large}
 
-To ensure that the images were processed by the summarization model, it was necessary to convert them into detailed textual descriptions. 
+\hspace{1em}To ensure that the images were processed by the summarization model, it was necessary to convert them into detailed textual descriptions. 
 For this task, we employed Florence-2 by Microsoft~\cite{xiao2023florence2advancingunifiedrepresentation}, an advanced vision foundation model that utilizes a prompt-based approach to address a wide array of vision and vision-language tasks. 
 Florence-2 is designed to interpret text prompts as task instructions and produce the desired textual outputs, including captioning, object detection, grounding, and segmentation. 
 This model is built upon the extensive FLD-5B dataset, which comprises 5.4 billion annotations across 126 million images, thereby enhancing its multi-task learning capabilities. 
@@ -189,7 +182,7 @@ The sequence-to-sequence architecture of Florence-2 allows it to perform effecti
 
 \subsubsection{Whisper}
 
-In addition to processing images, it was necessary to convert voice messages to text. 
+\hspace{1em}In addition to processing images, it was necessary to convert voice messages to text. 
 For this task, we utilized Whisper by OpenAI~\cite{radford2022robustspeechrecognitionlargescale}, an automatic speech recognition (ASR) system. 
 Whisper is trained on 680,000 hours of multilingual and multitask supervised data collected from the web. 
 The extensive and diverse dataset enhances the system's robustness to accents, background noise, and technical language, which is particularly beneficial for our use case, as voice messages are often of suboptimal quality. 
@@ -217,9 +210,8 @@ Each metric is calculated as follows:
 The value returned for each ROUGE metric is the F1-Score, since it provides a balanced measure of a model's performance by combining both precision and recall. By doing so, it avoids scenarios where a model might have high precision but low recall values, or vice versa. This is especially important when both false positives and false negatives carry significant costs.
 
 \subsection{Human evaluation - Fleiss' Kappa}
-We evaluated the results of the model on the WhatsApp chats in this way: given the 12 chats we had, each member of the group voted if the summary was good or not.
-The final results were obtained by using the Fleiss' Kappa metric, which is a statistical measure for assessing the reliability of agreement between a fixed number of raters 
-when assigning categorical ratings to a number of items or classifying items. 
+We evaluated the results of the model on the WhatsApp chats as follows: for each of the 12 chats we had, every group member voted if the summary met the expectations or not in terms of quality.
+The final results were obtained by using the Fleiss' Kappa metric, which is a statistical measure for assessing the reliability of agreement between a fixed number of raters when assigning categorical ratings to a number of items or classifying items. \\
 It is defined as follows:
 \begin{itemize}
     \item Proportion of annotations for which all the members agree:
@@ -294,9 +286,8 @@ Putting the preprocessing and the fine-tuned (nome modello) together, we tested 
     \end{tabular}
 \caption{Results of the human evaluation}
 \label{table:example}
-\end{table}
-
-Here there is an example of the output of the model on a chat of the custom dataset:
+\end{table} \\
+Here is an example of the model’s output on a chat from our custom dataset:
 \begin{lstlisting}
     {
         'text': "Hello, how are you?",
