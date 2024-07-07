@@ -1,2 +1,2 @@
-Alex and Emily discuss building a new PC. They choose to buy the components like an ASUS TUF motherboard which support 
-the latest CPUs, the SSD, the case, the monitor, the keyboard and the RGB lighting. Alex and Emily will order everything.
+Alex and Emily discuss building a new PC. They choose to buy the components like an ASUS TUF motherboard (which support 
+the latest CPUs) , the SSD, the case, the monitor, the keyboard and the RGB lighting. Alex and Emily will order everything.
