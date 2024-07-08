@@ -253,7 +253,7 @@ The fine-tuned models have been uploaded to the following Hugging Face's reposit
     \item FLAN-T5: \url{https://huggingface.co/Seba213/flan-t5-base-samsum}
 \end{itemize}
 
-Our studies conducted us to try to use models like flan-T5 and BART as models that were more suitable for our task.
+\subsection{BART hyperparameters selection}
 We started by using BART, where we selected BART-large-cnn over BART-large-xsum available on Hugginface by Meta, because the first model, based on what it was fine-tuned with, tended to generate longer summaries retaining more information with respect to the other model that aims to produce shorter and concise summaries, missing some important informations of the dialogues for our task.
 We monitored the training loss and the validation loss of the model through the logging hyperparameters specified in the Seq2SeqTrainingArguments. While experimenting with the model we kept a frequent logging to monitor the progress of the losses. 
 We started changing the learning rate, noticing that increasing it slightly, with respect to the default measure, it was performing better. Instead using an higher learning rate like 1e-03 or 1e-04 the loss functions were increasing. After noticing this we decided to fix the learning rate and experimenting with the other hyperparameters. 
@@ -265,13 +265,14 @@ We started then to increase \texttt{per\textunderscore device\textunderscore tra
 cost of requiring more memory, making the most of Colab free resources. Using higher batch sizes also decreased the validation loss and improved the Rouge metrics. 
 Knowing the Colab free limitations we decided to exploit the \texttt{gradient\textunderscore accumulation\textunderscore steps} hyperparameter in order to increases the batch 
 size without requiring more memory, as explained in the notebook.
-As a last but not least hyperaparmeter, we decided to put fp16=True in order to speed up training and reducing memory usage, allowing us to use larger batch sizes.
+As a last but not least hyperaparmeter, we decided to put \texttt{fp16=True} in order to speed up training and reducing memory usage, allowing us to use larger batch sizes.
+\subsection{FLAN-T5 hyperparameters selection}
 After obtaining almost good results tweaking all the possible hyperparameters to lead to the best results, we decided to test another model, T5 of Google, found when we were studying the possible state of the art models for abstractive summarization.
 For what it concerns T5, we decided to take FLAN-T5 with respect to normal T5, because this model is already fine-tuned on a variety of downstream tasks, including 
 summarization on a variety of summarization datasets.
 The function used in T5 for preprocessing the data uses the tokenizer, but here we decided, as seen in the Huggingface tutorial about summarization, to avoid accounting for padding in the loss and to add, as required, the prefix for the summarization task.
 After this we used the same approach to find the best combination of hyperparameters monitoring also the ROUGE metrics during each epoch.
-Here, instead we decide to put fp16=False since the FLAN-T5-base has less parameters than BART-large-cnn, then require less memory usage.
+Here, instead we decide to put \texttt{fp16=False} since the FLAN-T5-base has less parameters than BART-large-cnn, then require less memory usage.
 At the end we decided to keep the FLAN-T5 model as the final fine-tuned model, observing that it was obtaining the best ROUGE metrics given by the testing part at the end of the notebook.
 
 \section{Testing}

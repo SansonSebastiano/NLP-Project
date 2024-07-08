@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  8 JUL 2024 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  8 JUL 2024 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,27 +478,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 256--276
+Underfull \hbox (badness 1052) in paragraph at lines 257--269
 \T1/ptm/m/n/10 then to in-crease \T1/pcr/m/n/10 per_device_train_batch_size
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 256--276
+Underfull \hbox (badness 3260) in paragraph at lines 257--269
 \T1/ptm/m/n/10 mem-ory, mak-ing the most of Co-lab free re-sources.
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 256--276
+Underfull \hbox (badness 3333) in paragraph at lines 257--269
 \T1/ptm/m/n/10 Us-ing higher batch sizes also de-creased the val-i-da-
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 256--276
+Underfull \hbox (badness 1946) in paragraph at lines 257--269
 \T1/ptm/m/n/10 the Co-lab free lim-i-ta-tions we de-cided to ex-ploit the
  []
 
 [4]
-Overfull \hbox (10.49272pt too wide) in paragraph at lines 325--347
+Overfull \hbox (10.49272pt too wide) in paragraph at lines 326--348
  [][] 
  []
 
@@ -534,17 +534,17 @@ L3 programming layer <2023-12-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14192 strings out of 474494
- 215023 string characters out of 5753733
+ 14194 strings out of 474494
+ 215051 string characters out of 5753733
  1971460 words of memory out of 5000000
  36225 multiletter control sequences out of 15000+600000
  595799 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,79p,909b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (6 pages, 118375 bytes).
+Output written on egpaper_final.pdf (6 pages, 119172 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
