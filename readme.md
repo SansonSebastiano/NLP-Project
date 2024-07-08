@@ -1,0 +1,33 @@
+## Whatsapp Chat Summarizer
+
+## Folder Structure
+- Notebooks/
+  - BART_Large_ChatSummarization.ipynb
+  - FLAN_T5_ChatSummarization.ipynb
+  - Inference.ipynb
+  - Parser/
+    - exported_chat/
+      - sample_whatsapp{x}/
+        - media.png
+        - media.mp3
+        - sample_whatsapp.txt
+        - summary.txt
+      - Preprocessing.ipynb
+      - test.json
+- Paper.pdf (?)
+
+
+### Description
+
+In the `Notebooks` folder, you will find all the notebooks used during the project, including BART fine-tuning, T5 fine-tuning, dataset creation, and inference.
+
+- **BART_Large_ChatSummarization.ipynb:** Tests on the base model, fine-tuning of the BART model on SamSum, and tests on the fine-tuned model.
+- **FLAN_T5_ChatSummarization.ipynb:** Tests on the base model, fine-tuning of the FLAN_T5 model on SamSum, and tests on the fine-tuned model.
+- **Inference.ipynb:** Inference using our dataset and evaluation of the results.
+- **Preprocessing.ipynb:** Parsing of WhatsApp exported chat and creation of the JSON dataset.
+
+## Run the Models
+
+1. Fine-tune your preferred model (FLAN_T5 or BART).
+2. Generate a new dataset with a WhatsApp chat, or use the provided one.
+3. Run inference on the dataset.
