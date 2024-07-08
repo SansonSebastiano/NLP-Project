@@ -20,7 +20,7 @@
 
 ### Description
 
-In the `Notebooks` folder, you will find all the notebooks used during the project, including BART fine-tuning, T5 fine-tuning, dataset creation, and inference.
+In the `Notebooks` folder, you will find all the notebooks used during the project, including BART fine-tuning, T5 fine-tuning, dataset creation, Samsung/samsum dataset analysis and inference.
 
 - **BART_Large_ChatSummarization.ipynb:** Tests on the base model, fine-tuning of the BART model on SamSum, and tests on the fine-tuned model.
 - **FLAN_T5_ChatSummarization.ipynb:** Tests on the base model, fine-tuning of the FLAN_T5 model on SamSum, and tests on the fine-tuned model.
