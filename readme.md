@@ -14,7 +14,7 @@
         - summary.txt
       - Preprocessing.ipynb
       - test.json
-- Paper.pdf (?)
+- Paper.pdf
 
 
 ### Description
@@ -28,6 +28,8 @@ In the `Notebooks` folder, you will find all the notebooks used during the proje
 
 ## Run the Models
 
-1. Fine-tune your preferred model (FLAN_T5 or BART).
-2. Generate a new dataset with a WhatsApp chat, or use the provided one.
-3. Run inference on the dataset.
+1. Fine-tune your preferred model (FLAN_T5 or BART) or directly use the ones already uploaded in our Hugging Face repository:
+   - [BART](https://huggingface.co/Seba213/bart-large-cnn-samsum)
+   - [FLAN-T5](https://huggingface.co/Seba213/flan-t5-base-samsum)
+3. Generate a new dataset with a WhatsApp chat, or use the provided one.
+4. Run inference on the dataset.
