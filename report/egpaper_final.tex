@@ -13,6 +13,7 @@
 \usepackage{makecell}
 \usepackage[T1]{fontenc}
 \usepackage{placeins}
+\usepackage{booktabs}
 
 \definecolor{lightergray}{rgb}{0.9,0.9,0.9}
 \renewcommand{\arraystretch}{1.15}
@@ -87,7 +88,6 @@ Sebastiano Sanson\\
 In the era of digital communication, chat platforms have become fundamentals in our daily interactions, whether they are personal or professional. This new type of transmission favors real-time messages exchange which allows users to engage in conversations that can quickly accumulate extensive chat logs. The large volume of messages, especially in active group chats formed by dozens or even hundreds of users, often makes it difficult for users to stay updated without dedicating significant time to review each message. This issue highlights the need for an efficient method to quickly extract essential information from chat conversations. \\
 We aim to address this need by developing an automated system for summarizing chat messages, with the goal to generate concise summaries and reducing the need to sort through all messages. By doing so, users can quickly obtain the main points of discussions, significantly saving time and reducing cognitive load. The utility of this application is evident in various contexts. For instance, in corporate environments, project teams often heavily rely on group chats to coordinate tasks, share updates and exchange miscellaneous informations. Similarly, social groups frequently engage in dynamic conversations, discussing a wide range of topics, planning events, and sharing personal updates. In both scenarios, an automated summarization system can enhance productivity and ensure important information is not overlooked. \\
 This research aims to explore and implement state of the art NLP techniques to create an effective summarization system, focusing on the datasets used, the manipulation of them in order to obtain always a coherent data structure, how we obtained new examples to test the performances and the results we got after all.
-Regarding the results, we fulfilled successfully all the task criteria outlined in the work plan, including also the non mandatory ones.
 
 \section{Datasets}
 
@@ -107,9 +107,7 @@ they may contain slang words, emoticons and typos. Then, the conversations were 
 It was assumed that summaries should be a concise brief of what people talked about in the conversation in third person. 
 The SAMSum dataset was prepared by Samsung R\&D Institute Poland and is distributed for research purposes.
 
-% dialogsum tolta una colonna topic
 \subsection{Testing dataset}
-
 To assess the performance of the selected models within our specific use case, we constructed a testing dataset by generating new examples derived from authentic conversations exported by WhatsApp.
 
 \subsubsection{Data collection}
@@ -321,7 +319,7 @@ We achieved all the objectives outlined in our work plan, including the non-mand
         \hline
         6 & \makecell{Summarization of \\ voice messages} & No & Completed \\
         \hline
-        7 & \makecell{Test and evaluation \\ of the model} & Yes & \makecell{Completed \\ ROUGE: 0.416 > 0.4 \\ F-Score: ???} \\
+        7 & \makecell{Test and evaluation \\ of the model} & Yes & \makecell{Completed \\ ROUGE: 0.416 > 0.40} \\
         \hline
         8 & Documentation & Yes & Completed \\
         \hline
@@ -355,6 +353,7 @@ Additionally, we got really close to the time schedule proposed in the work plan
         \hline
         8 & 5 & 5 & 5 & 5 & 5 & 25 \\
         \hline
+        \specialrule{0.1pt}{4pt}{0pt}
         Tot & 50 & 51 & 52 & 52 & 52 & 257 \\
         \hline
     \end{tabular}
