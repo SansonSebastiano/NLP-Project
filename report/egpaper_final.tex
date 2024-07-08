@@ -207,7 +207,7 @@ After reviewing the state-of-the-art literature on the summarization task, we de
 \begin{itemize}
     \item chose abstractive over extractive summarization because the former provides more human-like and fluent summaries;
     \item selected small-sized models, based on our study of state-of-the-art models, due to computational cost considerations;
-    \item fine-tuned the models on the SAMSum dataset, as it best suited our needs in terms of dialogue structure.
+    \item fine-tuned the models with the SAMSum dataset, as it best suited our needs in terms of dialogue structure.
 \end{itemize}
 
 \section{Fine tuning}
@@ -253,6 +253,26 @@ The fine-tuned models have been uploaded to the following Hugging Face's reposit
     \item FLAN-T5: \url{https://huggingface.co/Seba213/flan-t5-base-samsum}
 \end{itemize}
 
+Our studies conducted us to try to use models like flan-T5 and BART as models that were more suitable for our task.
+We started by using BART, where we selected BART-large-cnn over BART-large-xsum available on Hugginface by Meta, because the first model, based on what it was fine-tuned with, tended to generate longer summaries retaining more information with respect to the other model that aims to produce shorter and concise summaries, missing some important informations of the dialogues for our task.
+We monitored the training loss and the validation loss of the model through the logging hyperparameters specified in the Seq2SeqTrainingArguments. While experimenting with the model we kept a frequent logging to monitor the progress of the losses. 
+We started changing the learning rate, noticing that increasing it slightly, with respect to the default measure, it was performing better. Instead using an higher learning rate like 1e-03 or 1e-04 the loss functions were increasing. After noticing this we decided to fix the learning rate and experimenting with the other hyperparameters. 
+We decided to experiment with the \texttt{num\textunderscore train\textunderscore epochs}, starting increasing it, in order to put more epochs to help the model learn 
+better keeping an eye on avoiding overfitting. We noticed that at every epoch the training loss decreased significantly after stabilizing, instead the validation loss 
+decreased at the beginning and then through the epochs it remained almost the same. We decided to keep this number at 3 in order to learn important structure of the data.
+We started then to increase \texttt{per\textunderscore device\textunderscore train\textunderscore batch\textunderscore size} and 
+\texttt{per\textunderscore device\textunderscore eval\textunderscore batch\textunderscore size} to have a more stable gradient estimates at the 
+cost of requiring more memory, making the most of Colab free resources. Using higher batch sizes also decreased the validation loss and improved the Rouge metrics. 
+Knowing the Colab free limitations we decided to exploit the \texttt{gradient\textunderscore accumulation\textunderscore steps} hyperparameter in order to increases the batch 
+size without requiring more memory, as explained in the notebook.
+As a last but not least hyperaparmeter, we decided to put fp16=True in order to speed up training and reducing memory usage, allowing us to use larger batch sizes.
+After obtaining almost good results tweaking all the possible hyperparameters to lead to the best results, we decided to test another model, T5 of Google, found when we were studying the possible state of the art models for abstractive summarization.
+For what it concerns T5, we decided to take FLAN-T5 with respect to normal T5, because this model is already fine-tuned on a variety of downstream tasks, including 
+summarization on a variety of summarization datasets.
+The function used in T5 for preprocessing the data uses the tokenizer, but here we decided, as seen in the Huggingface tutorial about summarization, to avoid accounting for padding in the loss and to add, as required, the prefix for the summarization task.
+After this we used the same approach to find the best combination of hyperparameters monitoring also the ROUGE metrics during each epoch.
+Here, instead we decide to put fp16=False since the FLAN-T5-base has less parameters than BART-large-cnn, then require less memory usage.
+At the end we decided to keep the FLAN-T5 model as the final fine-tuned model, observing that it was obtaining the best ROUGE metrics given by the testing part at the end of the notebook.
 
 \section{Testing}
 After completing all the steps mentioned before, we assessed the practical performance on the custom dataset by voting on whether the generated summaries met our expectations, as detailed in the Human evaluation section. The results are shown in the following table, where the first row represents the chat ID and the second row represents our quality rating for that summary:
@@ -288,14 +308,14 @@ Furthermore, we calculated the ROUGE scores for all the examples in the custom d
 \end{table} 
 \FloatBarrier \noindent
 Here is an example of the model’s output on a chat from our custom dataset:
-\begin{lstlisting}
-    {
-        'text': "Hello, how are you?",
-        'id': 0,
-        'golden_summary': "A greeting",
-        'summary': "A greeting"
-    }
-\end{lstlisting}
+\begin{itemize}
+    \item Golden summay: In the group chat, Mia asks the group about plans for tonight. Alex suggests
+    dinner and a movie, and Chris agrees.They decide to meet at 7 PM in an
+    italian restaurant. For the movie, they choose Tenet, and agree on booking
+    tickets in advance for the 9 PM show.
+    \item Model summary: Mia, Alex, Chris and Taylor will meet at the Italian restaurant downtown at 7 pm for dinner and then a movie. They are going to see the new action movie Tenet at 9 pm. Mia will book 5 tickets for the 9 pm show.
+\end{itemize}
+
 \section{Conclusions}
 In conclusion, we successfully developed a specialized model capable of summarizing chat dialogues and integrating textual representations of images and voice messages. The main challenges we encountered were the limited resources provided by Google Colab free tier, which prevented us from utilizing larger and better performing models, and the dependency on image conversion since the model used did not always provide accurate descriptions due to hallucinations.\\
 We achieved all the objectives outlined in our work plan, including the non-mandatory tasks.

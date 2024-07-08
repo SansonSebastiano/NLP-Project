@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex egpaper_final"] 1720381237 "egpaper_final.aux" "egpaper_final.bbl" "egpaper_final" 1720382812 0
+["bibtex egpaper_final"] 1720452061 "egpaper_final.aux" "egpaper_final.bbl" "egpaper_final" 1720452087 0
   "./egbib.bib" 1720258840 3949 1f9dd440a629c5c2a3d61ea4bd38a5ca ""
   "./ieee_fullname.bst" 1720012549 21040 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "egpaper_final.aux" 1720382811 4542 ede7f8ab715af0d343ad612d6383ef86 "pdflatex"
+  "egpaper_final.aux" 1720452086 4538 0cebec8aa87aa61a58cc2880d506c683 "pdflatex"
   (generated)
   "egpaper_final.bbl"
   "egpaper_final.blg"
   (rewritten before read)
-["pdflatex"] 1720382810 "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" "egpaper_final.pdf" "egpaper_final" 1720382812 0
+["pdflatex"] 1720452085 "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" "egpaper_final.pdf" "egpaper_final" 1720452087 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136765053 1292 bd42be2f344128bff6d35d98474adfe3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136765053 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -80,6 +80,7 @@
   "C:/Program Files/MiKTeX/tex/latex/base/atveryend-ltx.sty" 1698826601 2462 bf9125b296cce4cf6b76bdcf656c65ce ""
   "C:/Program Files/MiKTeX/tex/latex/base/fontenc.sty" 1698826601 5119 50695b8f743569fbac71a83f7ef51fe2 ""
   "C:/Program Files/MiKTeX/tex/latex/base/size10.clo" 1698826601 8448 74078c4a887f2cdcd57c3ec111622740 ""
+  "C:/Program Files/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Program Files/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Program Files/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Program Files/MiKTeX/tex/latex/colortbl/colortbl.sty" 1716806070 12345 7bca4ad292ae2b62fed1766b543d04d5 ""
@@ -110,6 +111,7 @@
   "C:/Program Files/MiKTeX/tex/latex/listings/lstlang1.sty" 1679057124 205154 31132370016e8c97e49bc3862419679b ""
   "C:/Program Files/MiKTeX/tex/latex/listings/lstmisc.sty" 1679057124 77021 d05e9115c67855816136d82929db8892 ""
   "C:/Program Files/MiKTeX/tex/latex/makecell/makecell.sty" 1250677107 16155 2dd7dde1ec1c2a3d0c85bc3b273e04d8 ""
+  "C:/Program Files/MiKTeX/tex/latex/placeins/placeins.sty" 1113865200 4087 636308456f60d2b31cbf97867db5708d ""
   "C:/Program Files/MiKTeX/tex/latex/psnfss/t1pcr.fd" 1585253778 835 d5895e9edc628f2be019beb2c0ec66df ""
   "C:/Program Files/MiKTeX/tex/latex/psnfss/t1ptm.fd" 1585253778 817 61d7da1e9f9e74989b196d147e623736 ""
   "C:/Program Files/MiKTeX/tex/latex/psnfss/times.sty" 1585926771 888 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
@@ -122,12 +124,12 @@
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1704129212 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1704129614 24214252 cc690f832350213b62e49e8eecd65268 ""
-  "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" 1720382809 25483 d17fe973378b58a8f004db5b8e3a9b8e ""
+  "c:/Users/User/Desktop/Universita/Magistrale/NLP_project/report/egpaper_final.tex" 1720452083 28694 e9076771b2c0ea2b686b612bf63606af ""
   "cvpr.sty" 1720012549 8434 9c85e63bb1830fdefeac27370f229c9e ""
   "cvpr_eso.sty" 1720012549 3987 6aa7c08ff2621006e0603349e40a30a8 ""
-  "egpaper_final.aux" 1720382811 4542 ede7f8ab715af0d343ad612d6383ef86 "pdflatex"
-  "egpaper_final.bbl" 1720381237 1736 d26ffbc380451e3de447c58ea76492c0 "bibtex egpaper_final"
-  "egpaper_final.tex" 1720382809 25483 d17fe973378b58a8f004db5b8e3a9b8e ""
+  "egpaper_final.aux" 1720452086 4538 0cebec8aa87aa61a58cc2880d506c683 "pdflatex"
+  "egpaper_final.bbl" 1720452061 1736 d26ffbc380451e3de447c58ea76492c0 "bibtex egpaper_final"
+  "egpaper_final.tex" 1720452083 28694 e9076771b2c0ea2b686b612bf63606af ""
   "eso-pic.sty" 1720012549 9727 d2935ae95b5cd343fcf5887ff530288d ""
   (generated)
   "egpaper_final.aux"
