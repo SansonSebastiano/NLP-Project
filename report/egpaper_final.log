@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  8 JUL 2024 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.1)  8 JUL 2024 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -432,72 +432,73 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 75.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4531) in paragraph at lines 98--99
-[]\T1/ptm/m/n/10 The SAM-Sum [[]] dataset con-tains about 16,000
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 100.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 99.
+ (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 2142) in paragraph at lines 151--153
+Underfull \hbox (badness 2142) in paragraph at lines 150--152
 \T1/ptm/m/n/10 The T5 model fol-lows the Trans-former ar-chi-tec-ture's
  []
 
 [2]
-Underfull \hbox (badness 1817) in paragraph at lines 193--194
+Underfull \hbox (badness 1817) in paragraph at lines 192--193
 \T1/ptm/m/n/10 cor-rectly pre-dicted pos-i-tive in-stances to the to-tal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
-Overfull \hbox (5.07698pt too wide) detected at line 194
+Overfull \hbox (5.07698pt too wide) detected at line 193
 [] \OT1/cmr/m/n/10 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
+Underfull \hbox (badness 1082) in paragraph at lines 215--227
+\T1/ptm/m/n/10 i-tored the train-ing loss and the val-i-da-tion loss of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-[]\T1/ptm/m/n/10 FLAN-T5: []$\T1/pcr/m/n/10 https : / / huggingface . co /
+Underfull \hbox (badness 1939) in paragraph at lines 215--227
+\T1/ptm/m/n/10 ble gra-di-ent es-ti-mates, even though it re-quired more
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 257--269
-\T1/ptm/m/n/10 then to in-crease \T1/pcr/m/n/10 per_device_train_batch_size
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 257--269
+Underfull \hbox (badness 3260) in paragraph at lines 215--227
 \T1/ptm/m/n/10 mem-ory, mak-ing the most of Co-lab free re-sources.
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 257--269
+Underfull \hbox (badness 3333) in paragraph at lines 215--227
 \T1/ptm/m/n/10 Us-ing higher batch sizes also de-creased the val-i-da-
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 257--269
+Underfull \hbox (badness 1946) in paragraph at lines 215--227
 \T1/ptm/m/n/10 the Co-lab free lim-i-ta-tions we de-cided to ex-ploit the
  []
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[]\T1/ptm/m/n/10 FLAN-T5: []$\T1/pcr/m/n/10 https : / / huggingface . co /
+ []
+
+
 Overfull \hbox (10.49272pt too wide) in paragraph at lines 326--348
  [][] 
  []
@@ -534,17 +535,17 @@ L3 programming layer <2023-12-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14194 strings out of 474494
- 215051 string characters out of 5753733
+ 14195 strings out of 474494
+ 215065 string characters out of 5753733
  1971460 words of memory out of 5000000
  36225 multiletter control sequences out of 15000+600000
  595799 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,909b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,896b,1296s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (6 pages, 119172 bytes).
+Output written on egpaper_final.pdf (6 pages, 118743 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
