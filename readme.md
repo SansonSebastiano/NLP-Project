@@ -1,4 +1,5 @@
-## Whatsapp Chat Summarizer
+# Whatsapp-like Chat Summarizer
+This a project for NLP course - A.Y. 2023/2024
 
 ## Folder Structure
 - Notebooks/
