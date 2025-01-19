@@ -1,6 +1,12 @@
 # Whatsapp-like Chat Summarizer
 This a project for NLP course - A.Y. 2023/2024
 
+Developed in collaboration with:
+- [@auli16](https://github.com/auli16)
+- [@dvdbaggio](https://github.com/dvdbaggio)
+- [@marco-bernardi](https://github.com/marco-bernardi)
+- [@MarkBridge11](https://github.com/MarkBridge11)
+
 ## Folder Structure
 - Notebooks/
   - BART_Large_ChatSummarization.ipynb
